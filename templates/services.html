@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servicios</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            <h1>Empresa inti</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/about">Quiénes Somos</a></li>
+                <li><a href="/services">Servicios</a></li>
+                <li><a href="/news">Noticias</a></li>
+                <li><a href="/contactanos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Servicios</h2>
+        <section class="service">
+            <img src="{{ url_for('static', filename='images/') }}" alt="Servicio 1">
+            <h3>Consultoría Empresarial</h3>
+            <p>Te ayudamos a optimizar tus procesos y mejorar la eficiencia en tu negocio.</p>
+            <a href="#" class="btn">Leer más</a>
+        </section>
+        <section class="service">
+            <img src="{{ url_for('static', filename='images/') }}" alt="Servicio 2">
+            <h3>Desarrollo de Software</h3>
+            <p>Desarrollamos aplicaciones a medida para satisfacer tus necesidades.</p>
+            <a href="#" class="btn">Leer más</a>
+        </section>
+    </main>
+</body>
+</html>

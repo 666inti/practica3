@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            <h1>Empresa inti</h1>
+            <link rel="stylesheet" href="style.css">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/about">Quiénes Somos</a></li>
+                <li><a href="/services">Servicios</a></li>
+                <li><a href="/news">Noticias</a></li>
+                <li><a href="/contactanos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Últimas Noticias</h2>
+        <article>
+            <img src="{{ url_for('static', filename='images/') }}" alt="Noticia 1">
+            <h3>Nuevo Producto Lanzado</h3>
+            <p>Hoy anunciamos el lanzamiento de nuestro nuevo producto, que promete revolucionar el mercado.</p>
+        </article>
+    </main>
+</body>
+</html>

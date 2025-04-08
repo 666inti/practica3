@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            <h1>Empresa inti</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/about">Quiénes Somos</a></li>
+                <li><a href="/services">Servicios</a></li>
+                <li><a href="/news">Noticias</a></li>
+                <li><a href="/contactanos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="description">
+            <h2>Ofrecemos servicios de calidad</h2>
+            <p>En nuestra empresa, nos dedicamos a ofrecer los mejores productos y servicios para mejorar tu vida.</p>
+        </section>
+        <section class="testimonials">
+            <h2>Testimonios</h2>
+            <p>"Excelente servicio y atención al cliente. ¡Altamente recomendados!" - Cliente Ficticio</p>
+        </section>
+        <section class="cta">
+            <a href="/contacto" class="btn">Contáctanos</a>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

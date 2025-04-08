@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quienes Somos</title>
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            <h1>Empresa inti</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/about">Quiénes Somos</a></li>
+                <li><a href="/services">Servicios</a></li>
+                <li><a href="/news">Noticias</a></li>
+                <li><a href="/contactanos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Historia de la Empresa</h2>
+        <p>Fundada en 2025, nuestra empresa ha crecido rápidamente gracias a nuestro compromiso con la calidad y la satisfacción del cliente.</p>
+
+        <h3>Misión y Visión</h3>
+        <p><strong>Misión:</strong> Proveer soluciones innovadoras a través de nuestros productos y servicios.</p>
+        <p><strong>Visión:</strong> Ser líderes en el mercado, reconocidos por la calidad y excelencia de nuestro trabajo.</p>
+
+        <h3>Conoce a nuestro equipo</h3>
+        <div class="team">
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/') }}" alt="Miembro del equipo">
+                <p>mario bros - CEO</p>
+            </div>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/') }}" alt="Miembro del equipo">
+                <p>luigi bros - CTO</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
